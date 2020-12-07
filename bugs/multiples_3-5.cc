@@ -22,11 +22,9 @@ void Foreword() {
 // Returns true if the argument is a multiple of 3 or 5
 // Suitable to be inlined
 bool IsMultiple3Or5(int number) {
-  if (number % 3 == 0)
+  if (number % 3 == 0 || number % 5 == 0)
     return true;
-  if (number % 5 == 0)
-    return true;
-	return true;
+	else return false;
 }
 
 int main () {

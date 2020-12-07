@@ -16,8 +16,7 @@
 
 // Prints a Foreword before the complete execution of the program
 void Foreword() {
-  std::cout << "Este programa imprime el factorial de los N primeros \
-                números para un N introducido por el usuario" << std::endl << std::endl;
+  std::cout << "Este programa imprime el factorial de los N primeros números para un N introducido por el usuario" << std::endl << std::endl;
 }
 
 // Returns the factorial of the argument
@@ -27,7 +26,7 @@ unsigned long Factorial(unsigned number) {
     case 1:
       return 1;
     default:
-      unsigned long factorial;
+      unsigned long factorial = 1;
       for (unsigned i = 1; i <= number; ++i) {
         factorial *= i;
       }
